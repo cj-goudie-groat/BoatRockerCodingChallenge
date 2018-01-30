@@ -1,0 +1,8 @@
+{
+ "email" : "connorgoudie@live.com"
+, "name" : "Connor Goudie"
+}
+"repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/freakinhippies/BoatRockerCodingChallenge"
+  }

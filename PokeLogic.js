@@ -22,8 +22,8 @@ async function battle() {
   var pokemon1, pokemon2;
   //gets each pokemon from the api
   try {
-    pokemon1 = await getPokemon($("#pokemon1").val());
-    pokemon2 = await getPokemon($("#pokemon2").val());
+    pokemon1 = await getPokemon($("#pokemon1").val().toLowerCase());
+    pokemon2 = await getPokemon($("#pokemon2").val().toLowerCase());
   }
   catch (e) {
     $("#winner").val("invalid pokemon name");
