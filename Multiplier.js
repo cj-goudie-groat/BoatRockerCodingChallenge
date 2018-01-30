@@ -53,4 +53,22 @@ function Multiplier() {
   this.double_damage_from = function() {
     defenseMultiplier *= 2
   }
+
+  /**
+  Adjusts the attack and defense multipliers of the 2 pokemon. For each relation
+  of
+
+  relation : the array of all type interactions for the first pokemon
+  relationType : the current interaction type
+  pokemonType : the type of the second pokemon
+  **/
+  this.adjustMulitplier = function(relation, relationType, pokemonType) {
+    let i = relation.length;
+    if (multiplier.hasOwnProperty(relationType)) {
+      while (i--) {
+        if (relation[i].name == pokemonType)
+          multiplier[relationType]();
+      }
+    }
+  }
 }
